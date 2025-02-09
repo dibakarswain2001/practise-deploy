@@ -1,0 +1,40 @@
+[
+    {
+        "service": "Backend"
+        "description": "complete backend development"
+        "price": "8000"
+        "provider": "Swain"
+    },
+     {
+        "service": "Frontend"
+        "description": "Complete frontend development"
+        "price": "8000"
+        "provider": "Optimus"
+    },
+     {
+        "service": "FullStack"
+        "description": "Complete Fullstack Development"
+        "price": "15000"
+        "provider": "Swain"
+    },
+     {
+        "service": "FullStack"
+        "description": "Complete Fullstack Development"
+        "price": "34000"
+        "provider": "Optimus"
+    },
+     {
+        "service":  "cyber Security"
+        "description": "crypto chain"
+        "price": "67000"
+        "provider": "K4R&1K"
+    },
+     {
+        "service": "Cloud"
+        "description": "Cloud Orchestration"
+        "price": "99000"
+        "provider": "K4R71K"
+    },
+    
+
+]

@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 3000
 
 // ! CORS policy
 const corsOptions = {
-    origin: "http://localhost:5173",
+    origin: "https://admin-panel01-frontend.onrender.com",
     methods: ["GET","PUT","POST","PATCH","DELETE","HEAD"],
     credentials: true
 }

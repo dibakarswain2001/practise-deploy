@@ -59,7 +59,7 @@ export const Home = () => {
             <p>
               Ready to take the first step towards a more efficient and secure
               IT infrastructure? Contact us today for a free consultation and
-              let's discuss how Swain Technical can help your business thrive in
+              let's discuss how K 4 R 7 1 K Solution can help your business thrive in
               the digital age.
             </p>
             <div className="btn btn-group">

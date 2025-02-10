@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
 
     //  const API = "https://admin-panel01-backend.onrender.com";
 
-    const API = "http://localhost:8000"
+    const API = "https://admin-panel01-backend.onrender.com"
   const storeTokenInLS = (serverToken) => {
     setToken(serverToken);
     return localStorage.setItem("token", serverToken);

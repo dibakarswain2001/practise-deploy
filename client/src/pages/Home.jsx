@@ -7,11 +7,10 @@ export const Home = () => {
         <section className="section-hero">
           <div className="container grid grid-two-cols">
             <div className="hero-content">
-              <p>We are the World Best IT Company</p>
-              <h1>Welcome to Swain Technical</h1>
+              <h1>Welcome to K4R71K Solution</h1>
               <p>
                 Are you ready to take your business to the next level with
-                cutting-edge IT solutions? Look no further! At Swain Technical,
+                cutting-edge IT solutions? Look no further! At K4R71K Solution,
                 we specialize in providing innovative IT services and solutions
                 tailored to meet your unique needs.
               </p>

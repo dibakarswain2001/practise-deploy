@@ -12,7 +12,7 @@ export const Contact = () => {
 const [userData,setUserData] = useState(true);
 
   // ! get the data fro store
-  const {user}  = useAuth();
+  const {user, API}  = useAuth();
 
 
 
@@ -40,7 +40,7 @@ const [userData,setUserData] = useState(true);
     console.log(contact);
 
  try {
-  const response = await fetch("http://localhost:8000/api/form/contact",{
+  const response = await fetch(`${API}/api/form/contact`,{
     method: "POST",
     headers: {
       "Content-Type": "application/json"

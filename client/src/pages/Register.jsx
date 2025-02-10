@@ -16,7 +16,8 @@ export const Register = () => {
 
   const navigate = useNavigate();
   // ! get value from store
-const {storeTokenInLS} = useAuth();
+const {storeTokenInLS, API} = useAuth();
+const URL = `${API}/api/auth/register`;
 
 
 
@@ -40,7 +41,7 @@ const {storeTokenInLS} = useAuth();
     try {
       
 // ! connection code
-const response = await fetch("http://localhost:8000/api/auth/register",{
+const response = await fetch(URL,{
   method: "POST",
   headers: {
     "Content-Type": "application/json"

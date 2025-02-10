@@ -8,15 +8,17 @@ const defaultUser = {
   password: ""
 }
 
-const URL = "http://localhost:8000/api/auth/login";
+
 export const Login = () => {
   const [user,setUser] = useState(defaultUser);
 
 const navigate = useNavigate();
 
 // ! get value from store
-const {storeTokenInLS} = useAuth();
+const {storeTokenInLS, API} = useAuth();
 
+
+  const URL = `${API}/api/auth/login`;
   // ! handle Input
   const handleInput = (e) => {
     let {name,value} = e.target;

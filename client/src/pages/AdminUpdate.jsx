@@ -13,10 +13,10 @@ export const AdminUpdate = () => {
 const params = useParams();
 console.log(params);
 
-const {authorizationToken} = useAuth();
+const {authorizationToken, API} = useAuth();
   const getSingleUserData = async () => {
     try {
-      const response = await fetch(`http://localhost:8000/api/admin/users/${params.id}`,{
+      const response = await fetch(`${API}/api/admin/users/${params.id}`,{
         method: "GET",
         headers: {
           
@@ -47,7 +47,7 @@ const {authorizationToken} = useAuth();
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(`http://localhost:8000/api/admin/users/update/${params.id}`, {
+      const response = await fetch(`${API}/api/admin/users/update/${params.id}`, {
         method: "PATCH",
         headers: {
           "Content-Type":"application/json",

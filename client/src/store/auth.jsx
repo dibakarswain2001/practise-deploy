@@ -14,6 +14,10 @@ export const AuthProvider = ({ children }) => {
     const [services,setServices] = useState([]);
     const authorizationToken = `Bearer ${token}`;
     // ! set token in local Storage
+
+    //  const API = "https://admin-panel01-backend.onrender.com";
+
+    const API = "http://localhost:8000"
   const storeTokenInLS = (serverToken) => {
     setToken(serverToken);
     return localStorage.setItem("token", serverToken);
@@ -37,7 +41,7 @@ export const AuthProvider = ({ children }) => {
     
     try {
       setIsLoading(true);
-      const response = await fetch("http://localhost:8000/api/auth/user",{
+      const response = await fetch(`${API}/api/auth/user`,{
         method: "GET",
         headers: {
           Authorization: authorizationToken,
@@ -62,7 +66,7 @@ export const AuthProvider = ({ children }) => {
 // ! to fetch the services data from database
 const getServices = async () => {
   try {
-    const response = await fetch("http://localhost:8000/api/data/service",{
+    const response = await fetch(`${API}/api/data/service`,{
       method: "GET",
     });
 
@@ -84,7 +88,7 @@ const getServices = async () => {
   },[])
 
   return (
-    <AuthContext.Provider value={{ storeTokenInLS, LogoutUser, isLoggedIn, user, services, authorizationToken, isLoading }}>
+    <AuthContext.Provider value={{ storeTokenInLS, LogoutUser, isLoggedIn, user, services, authorizationToken, isLoading, API }}>
       {children}
     </AuthContext.Provider>
   );
